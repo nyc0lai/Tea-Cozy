@@ -1,0 +1,100 @@
+body {
+  opacity: 0.9;
+}
+html body {
+  margin: 0;
+  font-family: Halvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  text-align: center;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  display: flex;
+  height: 68px;
+  min-width: 600px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+  width: 100%;
+  z-index: 10;
+}
+.logo {
+  height: 50px;
+  margin-left: 10px;
+}
+
+.meniu {
+  margin-right: 10px;
+  width: 23rem;
+}
+.meniu a {
+  padding: 10px;
+  color: seashell;
+}
+
+#mission {
+  margin-top: 70px;
+  display: flex;
+  height: 700px;
+  width: 1200px;
+  background: url(./img/img-mission-background.jpg);
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  justify-items: center;
+}
+#center-item {
+  align-self: center;
+  background-color: black;
+  width: 100%;
+}
+#center-item h2 {
+  margin-top: 0.85rem;
+  margin-bottom: 0.85rem;
+}
+#center-item h4 {
+  margin-top: 0.85rem;
+  margin-bottom: 0.85rem;
+}
+
+#future {
+  display: flex;
+  border: 1px solid grey;
+  width: 1000px;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+#img {
+  border: 1px solid white;
+  width: 300px;
+  height: 200px;
+}
+
+#location {
+  border: 1px;
+  height: 500px;
+  width: 1200px;
+  background-image: url("./img/img-locations-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+}
+
+footer {
+  margin-left: 20px;
+  text-align: left;
+  padding-bottom: 25px;
+}
