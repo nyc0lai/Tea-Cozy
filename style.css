@@ -1,23 +1,50 @@
-body {
-  opacity: 0.9;
-}
-html body {
-  margin: 0;
-  font-family: Halvetica;
-  font-size: 22px;
-  color: seashell;
-  background-color: black;
-  text-align: center;
+:root {
+  --main-background-color: black;
+  --items-background-color: black;
+  --text-color: seashell;
+  --top-element-margin: 3.18rem;
 }
 
-#main {
+html {
+  font-size: 22px;
+  font-family: Halvetica;
+  font-size: 22px;
+  color: var(--text-color);
+  text-align: center;
+  line-height: 1.5;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  background-color: var(--main-background-color);
+  opacity: 0.9;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h4 {
+  display: block;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
 header {
-  background-color: black;
+  background-color: var(--main-background-color);
   position: fixed;
   top: 0;
   display: flex;
@@ -25,7 +52,7 @@ header {
   min-width: 600px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid seashell;
+  border-bottom: 1px solid var(--text-color);
   width: 100%;
   z-index: 10;
 }
@@ -40,60 +67,80 @@ header {
 }
 .meniu a {
   padding: 10px;
-  color: seashell;
+  color: var(--text-color);
 }
 
 #mission {
-  margin-top: 70px;
   display: flex;
+  margin-top: 70px;
   height: 700px;
   width: 1200px;
   background: url(./img/img-mission-background.jpg);
   background-repeat: no-repeat;
-  opacity: 0.9;
-  justify-items: center;
+  align-items: center;
 }
-#center-item {
-  align-self: center;
-  background-color: black;
+.center-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--items-background-color);
   width: 100%;
-}
-#center-item h2 {
-  margin-top: 0.85rem;
-  margin-bottom: 0.85rem;
-}
-#center-item h4 {
-  margin-top: 0.85rem;
-  margin-bottom: 0.85rem;
+  height: 100px;
 }
 
 #future {
-  display: flex;
+  margin-top: var(--top-element-margin);
   border: 1px solid grey;
   width: 1000px;
   justify-content: center;
+}
+.future-img-block {
+  display: flex;
   flex-wrap: wrap;
-  row-gap: 20px;
-  column-gap: 20px;
+  justify-content: center;
+  column-gap: 20px; 10px;
 }
 
-#img {
-  border: 1px solid white;
+.future-img {
   width: 300px;
   height: 200px;
 }
 
 #location {
-  border: 1px;
+  margin-top: var(--top-element-margin);
+  border: 1px solid red;
   height: 500px;
   width: 1200px;
   background-image: url("./img/img-locations-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 25%;
+  background-position: 50% 20%;
+  align-items: center;
+}
+
+#location h2 {
+  margin-bottom: 0;
+}
+
+.location-elements {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  
+}
+
+.text-element {
+  width: 300px;
+  background-color: var(--main-background-color);
+}
+
+#contacts {
+  height: 200px;
 }
 
 footer {
+  margin-top: var(--top-element-margin);
+  width: 100%;
   margin-left: 20px;
   text-align: left;
   padding-bottom: 25px;
