@@ -69,6 +69,7 @@ header {
   height: 700px;
   max-width: 1200px;
   background: url(./img/img-mission-background.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   align-items: center;
 }
